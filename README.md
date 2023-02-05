@@ -31,7 +31,7 @@ Check out this demo video to see the Chatbot for Minecraft Villagers in action:
 
 ## Usage
 
-1. Add your OpenAI api key using /lightai <your-apikey>
+1. Add your OpenAI api key using `/lightai <your-apikey>`
 2. Summon a Villager NPC by using the `/spawnnpc` command in the game.
 3. Right-click on the NPC to start a conversation.
 4. Use natural language to ask the NPC questions and get responses.
