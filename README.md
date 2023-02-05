@@ -9,6 +9,10 @@ Check out this demo video to see the Chatbot for Minecraft Villagers in action:
 
 [![Chatbot for Minecraft Villagers Demo Video](https://img.youtube.com/vi/7Z-VPBNbrWM/0.jpg)](https://www.youtube.com/watch?v=7Z-VPBNbrWM)
 
+## Install video
+
+[![Chatbot for Minecraft Villagers Demo Video](https://img.youtube.com/vi/NYCS8DXCpwc/0.jpg)](https://www.youtube.com/watch?v=NYCS8DXCpwc)
+
 ## Features
 
 - Generate unique backstories for each NPC
