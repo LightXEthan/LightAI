@@ -1,10 +1,5 @@
 package me.LightXEthan.lightai;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -34,14 +29,14 @@ public class NPCSpawner implements CommandExecutor {
 	    	
 	    	if(args.length == 0) {
 	            npc.setCustomName("Villager");
-	            loadPrompt("Villager", player);
+	            main.loadPrompt("Villager");
                 return true;
             }
 	    	
 	        if (sender instanceof Player) {
 	        	String npcName = args[0];
 	            npc.setCustomName(npcName);
-	            loadPrompt(npcName, player);
+	            main.loadPrompt(npcName);
 	        }
 	        
 	        player.sendMessage(ChatColor.GREEN + "NPC spawned!");
@@ -57,29 +52,8 @@ public class NPCSpawner implements CommandExecutor {
     		
     		main.saveApiKey(args[0]);
     	}
-    	
-    	
     	return true;
     }
-	
-	public void loadPrompt(String npcName, Player player) {
-		
-		File file = main.loadFile(npcName);
-
-        try {
-            // Read the contents of the file into a string
-            String contents = new String(Files.readAllBytes(Paths.get(file.getPath())));
-            // Print the contents of the file
-            System.out.println(contents);
-            
-    		String npcPrompt = contents;
-    		
-    		main.savePrompt(npcName, npcPrompt);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println(ChatColor.GRAY + "Prompt not found in folder.");
-        }
-	}
 }
 
 

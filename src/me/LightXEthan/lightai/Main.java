@@ -100,6 +100,25 @@ public class Main extends JavaPlugin implements Listener {
 	
 	// Load prompt
 	
+	public void loadPrompt(String npcName) {
+		
+		File file = loadFile(npcName);
+
+        try {
+            // Read the contents of the file into a string
+            String contents = new String(Files.readAllBytes(Paths.get(file.getPath())));
+            // Print the contents of the file
+            System.out.println(contents);
+            
+    		String npcPrompt = contents;
+    		
+    		savePrompt(npcName, npcPrompt);
+        } catch (IOException e) {
+            e.printStackTrace();
+            broadcastMessage(ChatColor.GRAY + "Prompt not found.");
+        }
+	}
+	
 	public File loadFile(String filename) {
 		// Get the plugin directory
         File pluginDir = getDataFolder();
@@ -197,6 +216,12 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	
 	public String getDefaultPrompt(String npcName) {
+		// Check if prompt exists in folder
+		this.loadPrompt(npcName);
+		if (npcs.containsKey(npcName)) {
+			return npcs.get(npcName);
+		}
+        
 		return String.format("The following is a conversation between a player and %s\\n", npcName);
 	}
 	
