@@ -1,0 +1,21 @@
+# Compiled class files
+*.class
+
+# Project build files
+target/
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA project files
+*.iml
+*.ipr
+*.iws
+
+# NetBeans project files
+nbproject/
+
+# Plugin data files
+plugins/

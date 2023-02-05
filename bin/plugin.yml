@@ -1,0 +1,9 @@
+main: me.LightXEthan.lightai.Main
+name: LightAI
+version: 1
+author: LightXEthan
+api-version: 1.13
+
+commands:
+  spawnnpc:
+  lightai:
