@@ -41,7 +41,7 @@ Check out this demo video to see the Chatbot for Minecraft Villagers in action:
 - When the apikey is added, this will store the apikey under `/plugins/LightAI/apikey.txt` so it can be reused on server shutdown and startup
 - To create a custom prompt for an NPC, create a file with the same name as the NPC and include the prompt in the file. The NPC will then use the prompt when interacting with players.
   - For example, if the NPC's name is "Ethan", you would create a file named "Ethan.txt" and include the custom prompt in the file. The next time the NPC interacts with a player, it will use the prompt from the file instead of the default prompt.
-  - Examples: `/spawnnpc Ethan` `/spawnnpc Pirate`
+  - Add the ![Ethan.txt](https://github.com/LightXEthan/LightAI/blob/main/build/LightAI/Ethan.txt) and ![Pirate.txt](https://github.com/LightXEthan/LightAI/blob/main/build/LightAI/Pirate.txt) to the plugins/LightAI directory. Examples: `/spawnnpc Ethan` `/spawnnpc Pirate`
   - Note the prompt will only load if you have the file before you talk to the npc or when it is spawned
   - Note I am not an expert in Chatbots or AI, I'm just a developer who is interested in this stuff
   
