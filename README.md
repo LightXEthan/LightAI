@@ -11,7 +11,7 @@ Check out this demo video to see the Chatbot for Minecraft Villagers in action:
 
 ## Install video
 
-[![Release + Tutorial Video](https://img.youtube.com/vi/NYCS8DXCpwc/0.jpg)](https://www.youtube.com/watch?v=NYCS8DXCpwc)
+[![Release + Tutorial Video](https://img.youtube.com/vi/FX0-mzqCuNE/0.jpg)](https://www.youtube.com/watch?v=FX0-mzqCuNE)
 
 ## Features
 
